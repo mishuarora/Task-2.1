@@ -15,10 +15,10 @@ app.post('/', (request, response) => {
     const firstname = request.body.fname;
     const lastname = request.body.lname;
     const email = request.body.email;
-    const url = 'https://us14.api.mailchimp.com/3.0/lists/c8f19efa18';
+    const url = 'https://us14.api.mailchimp.com/3.0/lists/c8g56efa17';
     const options = {
         method: "POST",
-        auth: "nimi:68a878232cc4d42c583be969990c8486-us14"
+        auth: "mish:68a878232cc4d42c583be969990678596-us13"
     };
     const data = {
         members: [{
@@ -45,16 +45,16 @@ app.post('/', (request, response) => {
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'nnimish50@gmail.com',
-            pass: 'rtrx kgis kcgq syvf'
+            user: 'aroramishu006@gmail.com',
+            pass: 'douc casn dsjm wwes'
         }
     });
 
     var mailOptions = {
-        from: 'nnimish50@gmail.com',
+        from: 'aroramishu006@gmail.com',
         to: email, 
         subject: 'Deakin Newsletter',
-        text: 'Thank you for signing up to Deakin Newsletter, WELCOME ABOARD!!!!!'
+        text: 'Thank you for signing up to Deakin Newsletter!'
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
